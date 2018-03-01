@@ -6,7 +6,20 @@ The goal of this case is to practice predictive analytics & portfolio constructi
 on simulated stock returns data. Given a historical series of features known to be  
 predictive of stock returns, your task is to create buy/sell signals for stocks in  
 order to form the highest sharpe portfolio.  
- 
+
+## Data 
+
+See the following link for data files: 
+
+https://drive.google.com/file/d/1KSJpJU_kyC7J03y9TsMVpZourGFS9eub/view?usp=sharing 
+
+
+## Dependencies 
+
+Install dependencies using "pip install -r requirements.txt" 
+
+You are welcome to add other dependencies to the requirements.txt file in your submission. 
+
 ## Directory Overview  
  
 The following important files are included in the directory:  
