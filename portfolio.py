@@ -15,7 +15,6 @@ Notes:
     implementation, we will use the original version of this file if any
     modifications were made.
     - You are required to implement (override) the build_signal function
-    after extending this interface. Attempting to override any other method
     in this class will lead to immediate disqualification from the round.
 
 Questions:
@@ -83,6 +82,7 @@ class PortfolioGenerator(object):
             stock_features = stock_df.loc[idx-MAX_LOOKBACK:idx-1]
             returns = stock_df.loc[idx:idx].set_index('ticker')['returns']
             signal = self.build_signal(stock_features)
+            #print signal
             signal_return = returns * signal
             daily_returns.append(np.mean(signal_return))
         sharpe_ratio = np.sqrt(252) * (np.mean(daily_returns) / np.std(daily_returns))

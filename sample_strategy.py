@@ -24,10 +24,10 @@ class SampleStrategy(PortfolioGenerator):
 
     def momentum(self, stock_features):
         return stock_features.groupby(['ticker'])['returns'].mean()
+    
 
 # Test out performance by running 'python sample_strategy.py'
 if __name__ == "__main__":
     portfolio = SampleStrategy()
     sharpe = portfolio.simulate_portfolio()
     print("*** Strategy Sharpe is {} ***".format(sharpe))
-
